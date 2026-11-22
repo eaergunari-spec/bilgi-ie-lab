@@ -31,7 +31,7 @@ h1{font-size:clamp(3rem,7vw,6.2rem);line-height:.9;letter-spacing:-.06em;margin:
 .sq3{width:22px;height:22px;background:var(--cyan);right:76%;top:24%}
 .sq4{width:18px;height:18px;background:var(--green);right:10%;top:82%}
 .sq5{width:15px;height:15px;background:var(--purple);right:0;top:15%}
-.startbtn,.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:850;cursor:pointer}
+.startbtn,.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:850;cursor:pointer;text-decoration:none;display:inline-block}
 .startbtn,.btn.primary{background:var(--wine);color:#fff}
 .btn.dark{background:#161616;color:white}
 .btn.light{background:#f0f1f3;color:#111}
@@ -111,7 +111,7 @@ canvas{width:100%;height:260px;display:block}
     <h1>FROM FORECAST<br>TO DECISION</h1>
     <p>A forecast tells you what you expect. Engineering starts when you must decide what to do with limited resources, competing goals and an uncertain future.</p>
     <div class="question">You have 20 couriers. Where would you send them?</div>
-    <p><button class="startbtn" onclick="document.getElementById('stage1').scrollIntoView()">Start Lab ↓</button></p>
+    <p><button class="startbtn" onclick="document.getElementById('stage1').scrollIntoView()">Start Lab ↓</button></p><p style="font-size:.95rem;color:#667085"><b>Browser Python included:</b> no login · no installation</p>
   </div>
   <div class="art"><div class="sq sq1"></div><div class="sq sq2"></div><div class="sq sq3"></div><div class="sq sq4"></div><div class="sq sq5"></div></div>
 </section>
@@ -158,7 +158,7 @@ canvas{width:100%;height:260px;display:block}
     <div>
       <div class="prompt">Your manual plan may be good. But can you prove that no better feasible allocation exists?</div>
       <p>The short Python code checks every feasible way to allocate 20 couriers. Copy it into a Python cell if your instructor asks you to run it.</p>
-      <button class="btn primary" onclick="runOptimizer()">Reveal the best throughput plan</button>
+      <button class="btn primary" onclick="runOptimizer()">Reveal the best throughput plan</button> <a class="btn light" href="python-lab/lab/index.html?path=01_Optimization.ipynb" target="_blank" rel="noopener">Open Python Lab ↗</a>
     </div>
     <div class="code">
       <button class="copy" onclick="copyCode('code1',this)">Copy</button>
@@ -237,7 +237,7 @@ print(best_plan, best_score)</pre>
     <div>
       <p>Generate 1,000 plausible evenings around the same forecast. The same decision now produces a distribution of outcomes, not one number.</p>
       <button class="btn primary" onclick="simulate1000()">Simulate 1,000 evenings</button>
-      <button class="btn light" onclick="simulate1000()">Run again</button>
+      <button class="btn light" onclick="simulate1000()">Run again</button> <a class="btn dark" href="python-lab/lab/index.html?path=02_Simulation.ipynb" target="_blank" rel="noopener">Open Python Lab ↗</a>
       <div class="stats" style="grid-template-columns:repeat(2,1fr);margin-top:14px">
         <div class="metric"><small>Average served</small><b id="sAvg">—</b></div>
         <div class="metric"><small>10th percentile</small><b id="sP10">—</b></div>
