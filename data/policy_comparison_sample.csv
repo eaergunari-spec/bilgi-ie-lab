@@ -1,0 +1,4 @@
+Plan,Allocation,Average_Served,P10_Served,Probability_WorstZone_Below50pct
+Throughput-first,8-7-5-0,73.0,67.0,1.0
+Service-floor,6-5-5-4,69.3,65.0,0.609
+Balanced,6-6-4-4,69.3,67.0,0.469
